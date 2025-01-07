@@ -6,7 +6,7 @@ const cors = require('cors')
 const body_parser = require('body-parser');
 const path = require('path');
 //pour gere tt les variables envirenement
-const dotenv = require('dotenv').config()
+require('dotenv').config()
 
 
 const router_mouvements = require('./router/router_mouvements')
@@ -22,7 +22,7 @@ const router_actvite_programmes_seamine = require('./router/router_activite_prog
 
 
 //projet_complet
- mongoose.connect('mongodb+srv://badama:hassane.com@eglise.rree4.mongodb.net/?retryWrites=true&w=majority&appName=eglise',
+ mongoose.connect(process.env.lien_bd,
  //mongoose.connect('mongodb+srv://badama:hassane1998COM@expressapi.lzw8bql.mongodb.net/eglise_mellen?retryWrites=true&w=majority&appName=ExpressApi',
 // {userNewUrlParser:true,useUnifiedTopology:true
 
