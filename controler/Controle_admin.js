@@ -6,7 +6,7 @@ const Admin = require('../models/admin')
 
 exports.AjouterAdmin = (req, res, next)=>{
     console.log("oui ici admin");
-   console.log(`${req.protocol}://${req.get("host")}/images/${req.file.filename}`);
+   //console.log(`${req.protocol}://${req.get("host")}/images/${req.file.filename}`);
     console.log(req.body.nom_user);
     console.log(req.body.mdp_user);
     console.log(req.body);
@@ -16,8 +16,9 @@ exports.AjouterAdmin = (req, res, next)=>{
         const admin = new Admin({
             nom_user: req.body.nom_user,
             mdp_user: hash,
+            file:""
             // email: req.body.email,
-            file:`${req.protocol}://${req.get("host")}/images/${req.file.filename}`
+           // file:`${req.protocol}://${req.get("host")}/images/${req.file.filename}`
         });
         
         admin.save()

@@ -22,7 +22,8 @@ const router_actvite_programmes_seamine = require('./router/router_activite_prog
 
 
 //projet_complet
- mongoose.connect('mongodb+srv://badama:hassane1998COM@expressapi.lzw8bql.mongodb.net/eglise_mellen?retryWrites=true&w=majority&appName=ExpressApi',
+ mongoose.connect('mongodb+srv://badama:hassane.com@eglise.rree4.mongodb.net/?retryWrites=true&w=majority&appName=eglise',
+ //mongoose.connect('mongodb+srv://badama:hassane1998COM@expressapi.lzw8bql.mongodb.net/eglise_mellen?retryWrites=true&w=majority&appName=ExpressApi',
 // {userNewUrlParser:true,useUnifiedTopology:true
 
 // }
